@@ -1,0 +1,23 @@
+[
+    {
+        "serviceName": "আবেদন গৃহীত",
+        "value": "0"
+    },
+    {
+        "serviceName": "ডাকে চলমান",
+        "value": "0"
+    },
+    {
+        "serviceName": "নথিতে চলমান",
+        "value": "0"
+    },
+    {
+        "serviceName": "নিষ্পত্তিকৃত",
+        "value": "0"
+    },
+    {
+        "serviceName": "মোট আবেদন",
+        "value": "0"
+    }
+
+]
