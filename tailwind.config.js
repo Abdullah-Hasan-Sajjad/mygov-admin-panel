@@ -6,7 +6,11 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'inner-body': '#ECF6F5',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin'),
