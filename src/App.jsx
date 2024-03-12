@@ -10,7 +10,7 @@ function App() {
     <> 
     <MainNavbar />
     <MainSidebar />
-
+    <InnerBody></InnerBody>
     <MainFooter />
     </>
   )

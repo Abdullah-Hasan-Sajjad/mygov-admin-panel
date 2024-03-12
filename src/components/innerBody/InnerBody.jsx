@@ -2,6 +2,8 @@ import React from "react";
 
 export default function InnerBody(){
 return(
-    <div className="h-full fixed bg-red-500"></div>
+    <div className="bg-inner-body md:ml-64 h-full">
+
+    </div>
 );
 };
