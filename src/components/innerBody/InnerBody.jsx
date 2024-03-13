@@ -5,6 +5,7 @@ import FullSelectionPortion from "../FullSelectionPortion";
 import Table from "../Table";
 import abedon from "../../data/abedon.json"
 import daak from "../../data/daak.json";
+import nothi from "../../data/nothi.json";
 
 export default function InnerBody() {
     return (
@@ -44,6 +45,18 @@ export default function InnerBody() {
                     "মোট আবেদন"
                 ]}
                 data={daak} />
+
+            {/* Nothi Table */}
+            <Table
+                columnNames={[
+                    "ক্রমিক",
+                    "নথির নাম",
+                    "নথির নম্বর",
+                    "গৃহীত আবেদন",
+                    "নিষ্পত্তিকৃত আবেদন",
+                    "মোট আবেদন"
+                ]}
+                data={nothi} />
 
         </div>
     );
