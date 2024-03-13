@@ -5,7 +5,7 @@ export default function MainNavbar() {
   return (
     <Navbar fluid>
       <Navbar.Brand href="#"> 
-        <img src="./src/assets/images/system-img/mygov-logo.png" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <img src="./src/assets/images/system-img/mygov-logo.png" className="mr-3 h-6 sm:h-9" alt="myGov Logo" />
       </Navbar.Brand>
       <div className="flex md:order-2 md:hidden">
         { /*<Button>Get started</Button>*/}
