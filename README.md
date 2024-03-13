@@ -1,3 +1,6 @@
+# packages used : 
+flowbite, React tailwindcss select,
+
 ## Preview :
 
 ### Components : 
