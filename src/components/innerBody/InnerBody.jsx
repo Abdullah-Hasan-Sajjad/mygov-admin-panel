@@ -5,9 +5,9 @@ import FullSelectionPortion from "../FullSelectionPortion";
 
 export default function InnerBody(){
     return(
-        <div className="flex flex-col items-center justify-between bg-inner-body md:ml-64 h-full gap-4 p-4">
+        <div className="flex flex-col bg-inner-body md:ml-64 h-full gap-4 p-4">
             <FullSelectionPortion />
-            <div>
+            <div className="flex flex-row items-center gap-4">
                 {
                     services.map((service, index)=>{
                         return <Dashcard key={index} title={service.serviceName} value={service.value}/>
