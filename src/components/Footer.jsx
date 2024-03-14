@@ -2,7 +2,7 @@ import { Footer } from 'flowbite-react';
 
 export default function MainFooter() {
   return (
-    <div className='md:ml-64 fixed bottom-0 left-0 right-0'>
+    <div className='md:ml-64 sticky bottom-0 left-0 right-0'>
         <Footer container>
         <Footer.LinkGroup className='flex items-center text-xs'>
             <Footer.Link >পরিকল্পনা ও বাস্তবায়নে</Footer.Link >
