@@ -1,7 +1,7 @@
 import { Button, Modal } from 'flowbite-react';
 import { useState } from 'react';
 
-export default function TestModal({text}) {
+export default function AbedonModal({text}) {  
   const [openModal, setOpenModal] = useState(false);
 
   return (

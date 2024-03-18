@@ -7,7 +7,7 @@ import abedon from "../../data/abedon.json"
 import daak from "../../data/daak.json";
 import nothi from "../../data/nothi.json";
 import DaakService from "../DaakService";
-import AbedonModal from "../AbedonModal";
+
 
 export default function InnerBody() {
     return (
@@ -61,8 +61,7 @@ export default function InnerBody() {
                 data={nothi} />
                 
             <DaakService /> 
-            <AbedonModal />
-            
+           
         </div>
     );
 };

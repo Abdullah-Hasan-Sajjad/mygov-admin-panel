@@ -1,5 +1,7 @@
 import { BiArchive } from "react-icons/bi";
 import AbedonModal from "./AbedonModal";
+import AbedonStatusModal from "./AbedonStatusModal";
+import abedonStatusData from "../data/abedon_status.json";
 
 export default function Test() {
     return (
@@ -40,7 +42,7 @@ export default function Test() {
                                 <td className="px-6 py-4 text-center">
 
                                     <div x-data="">
-                                        <a className="flex flex-wrap gap-2 items-center w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out cursor-pointer" id="applicationStatusModal_1" service-id="BDGS-1623308572" data-aid="BDGS-1623308572.0000004.20240215.2" x-data="">
+                                        <a className="flex flex-wrap gap-2 items-center w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out cursor-pointer" id="applicationStatusModal_1">
                                         <div><BiArchive /></div> 
                                         <div><AbedonModal text={"আবেদনের রিসিট"}/></div>
                                         
@@ -48,9 +50,9 @@ export default function Test() {
                                     </div>
  
                                     <div x-data="">
-                                        <a className="flex flex-wrap gap-2 items-center w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out cursor-pointer" id="applicationStatusModal_1" service-id="BDGS-1623308572" data-aid="BDGS-1623308572.0000004.20240215.2" x-data="">
+                                        <a className="flex flex-wrap gap-2 items-center w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out cursor-pointer" id="applicationStatusModal_1">
                                         <div><BiArchive /></div> 
-                                            <div>আবেদনের বিস্তারিত</div>
+                                            <AbedonStatusModal text={"আবেদনের বিস্তারিত"} abedonStatus={abedonStatusData}/>
                                         </a>
                                     </div>
  

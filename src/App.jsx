@@ -8,11 +8,10 @@ function App() {
   
   return (
     <> 
-    <MainNavbar />
-    <MainSidebar />
-    <InnerBody>
-    </InnerBody>
-    <MainFooter />
+      <MainNavbar />
+      <MainSidebar />
+      <InnerBody />
+      <MainFooter />
     </>
   )
 };
