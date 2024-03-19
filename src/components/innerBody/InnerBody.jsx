@@ -8,6 +8,8 @@ import daak from "../../data/daak.json";
 import nothi from "../../data/nothi.json";
 import DaakService from "../DaakService";
 import NothiForm from '../NothiForm';
+import ButtonModal from "../ButtonModal";
+import CreateNothi from "../CreateNothi";
 
 
 export default function InnerBody() {
@@ -62,7 +64,7 @@ export default function InnerBody() {
                 data={nothi} />
                 
             <DaakService /> 
-            <NothiForm />
+            <ButtonModal btnText={"নথি তৈরি করুন"} headerShow={false} footerShow={false}> <CreateNothi /> </ButtonModal>
            
         </div>
     );
