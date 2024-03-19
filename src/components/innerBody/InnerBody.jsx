@@ -7,12 +7,13 @@ import abedon from "../../data/abedon.json"
 import daak from "../../data/daak.json";
 import nothi from "../../data/nothi.json";
 import DaakService from "../DaakService";
+import NothiForm from '../NothiForm';
 
 
 export default function InnerBody() {
     return (
         <div className="flex flex-col bg-inner-body md:ml-64 h-full gap-4 p-4">
-            <FullSelectionPortion />
+            <FullSelectionPortion label={"সেবার নাম:"}/>
 
             {/* Dashcard portion */}
             <div className="flex flex-row items-center gap-4">
@@ -61,6 +62,7 @@ export default function InnerBody() {
                 data={nothi} />
                 
             <DaakService /> 
+            <NothiForm />
            
         </div>
     );

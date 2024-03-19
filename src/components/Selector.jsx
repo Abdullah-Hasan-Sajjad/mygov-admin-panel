@@ -6,7 +6,8 @@ const options = [
     { value: "Honeybee", label: "🐝 Honeybee" }
 ];
 
-const Selector = () => {
+export default function Selector({placeholder, searchInputPlaceholder}){
+    
     const [selectedService, setService] = useState(null);
 
     const handleChange = value => {
@@ -16,14 +17,14 @@ const Selector = () => {
 
     return (
         <Select
-            placeholder={"সেবা বাছাই করুন..."}
-            searchInputPlaceholder={"সেবা খুজুন..."}
+            //placeholder={"সেবা বাছাই করুন..."}
+            placeholder={placeholder}
+            searchInputPlaceholder={searchInputPlaceholder}
+            //searchInputPlaceholder={"সেবা খুজুন..."}
             isSearchable={true}
             value={selectedService}
             onChange={handleChange}
             options={options}
         />
     );
-};
-
-export default Selector;
+}
