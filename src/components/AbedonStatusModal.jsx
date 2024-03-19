@@ -16,7 +16,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
             <div className="relative">
                 <div className="overflow-y-auto" id="applicationSection" >
 
-                    {abedonStatus.map((data, index) => (
+                     
                         <div className="px-6">
                             <div className="relative rounded-lg ">
 
@@ -38,7 +38,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                             <div className=" flex justify-between">
                                                 <div className="application-collect w-1/4 flex flex-col items-center">
                                                     <div
-                                                    className={data.AbedonAccepted && data.AbedonAccepted.length > 0 ? "bg-yellow-200 p-4 rounded-full w-4" : "bg-gray-500 p-4 rounded-full w-4"}
+                                                    className={abedonStatus.AbedonAccepted && abedonStatus.AbedonAccepted.length > 0 ? "bg-yellow-200 p-4 rounded-full w-4" : "bg-gray-500 p-4 rounded-full w-4"}
                                                     ></div>
                                                     <div className="mt-2">
                                                         <h1 className="text-center">আবেদন গৃহীত</h1>
@@ -46,14 +46,14 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                                 </div>
                                                 <div className="application-collect w-1/4 flex flex-col items-center">
                                                     <div 
-                                                    className={data.Daak && data.Daak.length ? "bg-blue-400 p-4 rounded-full w-4" : "bg-gray-500 p-4 rounded-full w-4"}></div>
+                                                    className={abedonStatus.Daak && abedonStatus.Daak.length ? "bg-blue-400 p-4 rounded-full w-4" : "bg-gray-500 p-4 rounded-full w-4"}></div>
                                                     <div className="mt-2">
                                                         <h3 className="text-center">কার্যক্রম চলমান</h3>
                                                     </div>
                                                 </div>
                                                 <div className="application-collect w-1/4 flex flex-col items-center">
                                                     <div
-                                                    className={data.Nisponno && data.Nisponno.length ? "bg-green-400 p-4 rounded-full w-4" : "bg-gray-500 p-4 rounded-full w-4"}></div>
+                                                    className={abedonStatus.Nisponno && abedonStatus.Nisponno.length ? "bg-green-400 p-4 rounded-full w-4" : "bg-gray-500 p-4 rounded-full w-4"}></div>
                                                     <div className="mt-2">
                                                         <h3 className="text-center">নিস্পন্ন</h3>
                                                     </div>
@@ -62,7 +62,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                         </div>
                                     </div>
 
-                                    {data.generalInfo.map((generalInfo) => (
+                                    {abedonStatus.generalInfo.map((generalInfo) => (
                                         <div className="px-6 pb-2">
                                             <div className="flex items-center justify-between mt-4 ">
                                                 <div className="w-2/3 ">
@@ -83,7 +83,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
 
                                         <div className="subSection ">
 
-                                            {data.AbedonAccepted && data.AbedonAccepted.length > 0 && (data.AbedonAccepted.map((item, idx) => (
+                                            {abedonStatus.AbedonAccepted && abedonStatus.AbedonAccepted.length > 0 && (abedonStatus.AbedonAccepted.map((item, idx) => (
                                                 <div id="applicationCollect" className="pl-2 pt-2">
                                                     <div className="flex flex-column">
                                                         <div className="circle-container pr-2">
@@ -104,7 +104,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                                 </div>
                                             )))}
 
-                                            {data.Daak && data.Daak.length ?
+                                            {abedonStatus.Daak && abedonStatus.Daak.length ?
                                                 <div id="nothiCollect" className="pl-2 pt-3">
                                                     <div className="flex flex-column">
                                                         <div className="circle-container pr-2">
@@ -119,7 +119,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                                             <div>
                                                                 <h3 className="text-lg">ডাকে উপস্থাপিত</h3>
                                                             </div>
-                                                            {data.Daak && data.Daak.length && (data.Daak.map((item, idx) => (
+                                                            {abedonStatus.Daak && abedonStatus.Daak.length && (abedonStatus.Daak.map((item, idx) => (
                                                                 <div className="border-l pl-4  border-dashed border-gray-400" key={idx}>
 
                                                                     <div id="dakDdata" class="userInfoBorder">
@@ -142,7 +142,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                                 </div>
                                             :null}
 
-                                            {data.Nathi && data.Nathi.length ?
+                                            {abedonStatus.Nathi && abedonStatus.Nathi.length ?
                                                 <div id="approvalCollect" class="pl-2 pt-3">
                                                     <div className="flex flex-column">
                                                         <div className="circle-container md:pr-2 sm:hidden md:block">
@@ -153,7 +153,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
 
                                                         </div>
 
-                                                        <div><h3 className="text-lg">নথিতে উপস্থাপিত</h3>{data.Nathi && data.Nathi.length ? data.Nathi.map((item, idx) => (
+                                                        <div><h3 className="text-lg">নথিতে উপস্থাপিত</h3>{abedonStatus.Nathi && abedonStatus.Nathi.length ? abedonStatus.Nathi.map((item, idx) => (
 
                                                             <div id="nothiInfoData" className="border-l pl-4  border-dashed border-gray-400" key={idx}>
                                                                 <p className="text-xs">ডেস্কঃ
@@ -174,7 +174,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                                 </div>
                                             :null}
 
-                                            {data.Nisponno && data.Nisponno.length ?
+                                            {abedonStatus.Nisponno && abedonStatus.Nisponno.length ?
                                                 <div id="emptyApplication" className="pl-2 pt-3">
                                                     <div className="flex flex-column">
                                                         <div className="circle-container md:pr-2 sm:hidden md:block">
@@ -186,7 +186,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
 
                                                         <div>
                                                             <h3 className="text-lg">নিষ্পন্ন</h3>
-                                                            {data.Nisponno && data.Nisponno.length && (data.Nisponno.map((item, idx) => (
+                                                            {abedonStatus.Nisponno && abedonStatus.Nisponno.length && (abedonStatus.Nisponno.map((item, idx) => (
                                                                 <div key={idx}>
                                                                     <p className="text-xs">ডেস্কঃ
                                                                         <span id="approvalUser">{item.Desk}</span>
@@ -206,7 +206,7 @@ export default function AbedonStatusModal({text, abedonStatus}) {
                                 </div>
                             </div>
                         </div>
-                    ))}
+                     
 
                 </div>
             </div>
