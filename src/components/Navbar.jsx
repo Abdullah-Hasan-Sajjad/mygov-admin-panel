@@ -1,5 +1,6 @@
 import { Button, Navbar } from 'flowbite-react';
-import MainDropdown from '../Dropdown';
+import MainDropdown from './Dropdown';
+import { Outlet, Link } from "react-router-dom";
 
 export default function MainNavbar() {
   return (

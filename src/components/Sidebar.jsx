@@ -1,5 +1,6 @@
 import { Sidebar } from 'flowbite-react';
 import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
+import { Outlet, Link } from "react-router-dom";
 
 export default function MainSidebar() {
   return (
@@ -7,7 +8,9 @@ export default function MainSidebar() {
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           <Sidebar.Item href="#" icon={HiChartPie}>
-            ড্যাশবোর্ড
+            <Link to={"/dashboard"}>
+              ড্যাশবোর্ড
+            </Link>
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiViewBoards} label="Pro" labelColor="dark">
             আবেদন গ্রহণ
