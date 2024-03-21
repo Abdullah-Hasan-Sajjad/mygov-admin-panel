@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 export default function MainNavbar() {
   return (
-    <Navbar fluid>
+    <Navbar fluid className='sticky top-0 z-10'>
       <Navbar.Brand href="#"> 
         <img src="./src/assets/images/system-img/mygov-logo.png" className="mr-3 h-6 sm:h-9" alt="myGov Logo" />
       </Navbar.Brand>
