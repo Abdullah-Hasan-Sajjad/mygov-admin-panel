@@ -1,72 +1,36 @@
-import MainFooter from "./components/Footer"
-import MainNavbar from "./components/Navbar"
-import MainSidebar from "./components/Sidebar"
+
 import Dahsboard from "./components/Dashboard"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AbedonView from "./components/AbedonView"
 import DaakView from "./components/DaakView"
 import NathiView from "./components/NathiView"
+import MainLayout from "./components/mainLayout/MainLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: 
-    <>
-      <MainNavbar />
-      <MainSidebar />
-      <Dahsboard />
-      <MainFooter />
-    </>,
+    element: <MainLayout> <Dahsboard /></MainLayout>
     //errorElement: <ErrorPage />,
-
   },
   {
     path: "/dashboard",
-    element: 
-    <>
-      <MainNavbar />
-      <MainSidebar />
-      <Dahsboard />
-      <MainFooter />
-    </>,
+    element: <MainLayout><Dahsboard /></MainLayout>
     //errorElement: <ErrorPage />,
-
   },
   {
     path: "/abedon",
-    element: 
-    <>
-      <MainNavbar />
-      <MainSidebar />
-      <AbedonView />
-      <MainFooter />
-    </>,
+    element: <MainLayout><AbedonView /></MainLayout>
     //errorElement: <ErrorPage />,
-
   },
   {
     path: "/daak",
-    element: 
-    <>
-      <MainNavbar />
-      <MainSidebar />
-      <DaakView />
-      <MainFooter />
-    </>,
+    element: <MainLayout><DaakView /></MainLayout>
     //errorElement: <ErrorPage />,
-
   },
   {
     path: "/nathi",
-    element: 
-    <>
-      <MainNavbar />
-      <MainSidebar />
-      <NathiView />
-      <MainFooter />
-    </>,
+    element: <MainLayout><NathiView /></MainLayout>
     //errorElement: <ErrorPage />,
-
   },
 ]);
 
