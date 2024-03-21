@@ -5,7 +5,7 @@ import daak from ".././data/daak.json";
 import DaakService from "./DaakService";
 
 
-export default function InnerBody() {
+export default function DaakView() {
     return (
         <div className="flex flex-col bg-inner-body md:ml-64 h-full gap-4 p-4">
             <FullSelectionPortion label={"সেবার নাম:"} />

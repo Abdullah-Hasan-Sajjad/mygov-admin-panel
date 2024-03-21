@@ -3,7 +3,7 @@ import FullSelectionPortion from "./FullSelectionPortion";
 import Table from "./Table";
 import abedon from "../data/abedon.json"
 
-export default function Abedon() {
+export default function AbedonView() {
     return (
         <div className="flex flex-col bg-inner-body md:ml-64 h-full gap-4 p-4">
             <FullSelectionPortion label={"সেবার নাম:"}/>

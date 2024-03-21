@@ -1,10 +1,11 @@
 import MainFooter from "./components/Footer"
-import Abedon from "./components/AbedonView"
 import MainNavbar from "./components/Navbar"
 import MainSidebar from "./components/Sidebar"
 import Dahsboard from "./components/Dashboard"
-import Daak from "./components/DaakView"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AbedonView from "./components/AbedonView"
+import DaakView from "./components/DaakView"
+import NathiView from "./components/NathiView"
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
     <>
       <MainNavbar />
       <MainSidebar />
-      <Abedon />
+      <AbedonView />
       <MainFooter />
     </>,
     //errorElement: <ErrorPage />,
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
     <>
       <MainNavbar />
       <MainSidebar />
-      <Daak />
+      <DaakView />
       <MainFooter />
     </>,
     //errorElement: <ErrorPage />,
@@ -61,14 +62,13 @@ const router = createBrowserRouter([
     <>
       <MainNavbar />
       <MainSidebar />
-      <Dahsboard />
+      <NathiView />
       <MainFooter />
     </>,
     //errorElement: <ErrorPage />,
 
   },
 ]);
-
 
 function App() {
   return (
