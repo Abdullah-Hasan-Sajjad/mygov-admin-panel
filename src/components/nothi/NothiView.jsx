@@ -6,7 +6,7 @@ import ButtonModal from "../ButtonModal";
 import CreateNothi from "./CreateNothi";
 
 
-export default function NathiView() {
+export default function NothiView() {
     return (
         <div className="flex flex-col bg-inner-body md:ml-64 h-full gap-4 p-4">
             
