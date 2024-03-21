@@ -1,7 +1,7 @@
 import React from "react";
-import FullSelectionPortion from "./FullSelectionPortion";
-import Table from "./Table";
-import daak from ".././data/daak.json";
+import FullSelectionPortion from "../FullSelectionPortion";
+import Table from "../Table";
+import daak from "../../data/daak.json";
 import DaakService from "./DaakService";
 
 

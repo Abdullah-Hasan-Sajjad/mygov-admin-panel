@@ -1,7 +1,7 @@
 import { BiArchive } from "react-icons/bi";
-import AbedonModal from "./abedon/AbedonModal";
-import AbedonStatusModal from "./abedon/AbedonStatusModal";
-import abedonStatusData from "../data/abedon_status.json";
+import AbedonModal from "../abedon/AbedonModal";
+import AbedonStatusModal from "../abedon/AbedonStatusModal";
+import abedonStatusData from "../../data/abedon_status.json";
 
 export default function DaakService() {
     return (
