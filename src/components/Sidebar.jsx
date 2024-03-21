@@ -13,13 +13,19 @@ export default function MainSidebar() {
             </Link>
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiViewBoards} label="Pro" labelColor="dark">
-            আবেদন গ্রহণ
+            <Link to={"/abedon"}>
+              আবেদন গ্রহণ
+            </Link>
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiInbox} label="3">
-            ডাক
+            <Link to={"/daak"}>
+              ডাক
+            </Link>
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiShoppingBag}>
-            নথি
+            <Link to={"/nathi"}>
+              নথি
+            </Link>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>

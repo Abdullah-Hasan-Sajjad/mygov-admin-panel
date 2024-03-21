@@ -14,8 +14,16 @@ export default function MainNavbar() {
       </div>
   
       <Navbar.Collapse>
-        <Navbar.Link href="#" className='sm:hidden' active>ড্যাশবোর্ড</Navbar.Link>
-        <Navbar.Link href="#" className='sm:hidden'>আবেদন গ্রহণ</Navbar.Link>
+        <Navbar className='sm:hidden'>
+          <Link to={"/dashboard"}>
+            ড্যাশবোর্ড
+          </Link>
+        </Navbar>
+        <Navbar className='sm:hidden'>
+          <Link to={"/abedon"}>
+            আবেদন গ্রহণ
+          </Link>
+        </Navbar>
         <Navbar.Link href="#" className='sm:hidden'>ডাক</Navbar.Link>
         <Navbar.Link href="#" className='sm:hidden'>নথি</Navbar.Link>
         <MainDropdown dropdownSize={'small'} label={'ব্যবহারকারী'} dropdownItems={['Profile','Log Out']}/>  

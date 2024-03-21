@@ -1,5 +1,5 @@
 import MainFooter from "./components/Footer"
-import InnerBody from "./components/innerBody/InnerBody"
+import Abedon from "./components/Abedon"
 import MainNavbar from "./components/Navbar"
 import MainSidebar from "./components/Sidebar"
 import Dahsboard from "./components/Dashboard"
@@ -30,11 +30,46 @@ const router = createBrowserRouter([
     //errorElement: <ErrorPage />,
 
   },
+  {
+    path: "/abedon",
+    element: 
+    <>
+      <MainNavbar />
+      <MainSidebar />
+      <Abedon />
+      <MainFooter />
+    </>,
+    //errorElement: <ErrorPage />,
+
+  },
+  {
+    path: "/daak",
+    element: 
+    <>
+      <MainNavbar />
+      <MainSidebar />
+      <Dahsboard />
+      <MainFooter />
+    </>,
+    //errorElement: <ErrorPage />,
+
+  },
+  {
+    path: "/nathi",
+    element: 
+    <>
+      <MainNavbar />
+      <MainSidebar />
+      <Dahsboard />
+      <MainFooter />
+    </>,
+    //errorElement: <ErrorPage />,
+
+  },
 ]);
 
 
 function App() {
-
   return (
     <RouterProvider router={router} />)
 };
