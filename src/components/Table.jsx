@@ -2,7 +2,7 @@ export default function Table({ columnNames, data }) {
     let rowNo = 1;
 
     return (
-        <div className="sm:px-6 lg:px-6">
+        <div className="">
             <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div className="text-gray-900">
 
