@@ -1,7 +1,7 @@
 import React from "react";
 import Dashcard from "./Dashcard";
-import services from "./../data/services.json";
-import FullSelectionPortion from "./FullSelectionPortion";
+import services from "../../data/services.json";
+import FullSelectionPortion from "../FullSelectionPortion";
 
 
 export default function InnerBody() {

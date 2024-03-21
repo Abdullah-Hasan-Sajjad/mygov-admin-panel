@@ -1,5 +1,5 @@
 
-import Dahsboard from "./components/Dashboard"
+import Dahsboard from "./components/dashboard/Dashboard"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AbedonView from "./components/abedon/AbedonView"
 import DaakView from "./components/daak/DaakView"
