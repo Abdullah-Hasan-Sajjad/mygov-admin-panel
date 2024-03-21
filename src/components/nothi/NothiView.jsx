@@ -1,8 +1,8 @@
 import React from "react";
-import FullSelectionPortion from "./FullSelectionPortion";
-import Table from "./Table";
-import nothi from ".././data/nothi.json";
-import ButtonModal from "./ButtonModal";
+import FullSelectionPortion from "../FullSelectionPortion";
+import Table from "../Table";
+import nothi from "../../data/nothi.json";
+import ButtonModal from "../ButtonModal";
 import CreateNothi from "./CreateNothi";
 
 

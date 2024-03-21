@@ -3,7 +3,7 @@ import Dahsboard from "./components/Dashboard"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AbedonView from "./components/abedon/AbedonView"
 import DaakView from "./components/daak/DaakView"
-import NathiView from "./components/NathiView"
+import NathiView from "./components/nothi/NothiView"
 import MainLayout from "./components/mainLayout/MainLayout";
 
 const router = createBrowserRouter([
