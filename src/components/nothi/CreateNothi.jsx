@@ -1,5 +1,5 @@
 import { Button, Label, TextInput } from 'flowbite-react';
-import Selector from '../Selector';
+import Selector from '../mainComponents/Selector';
 import { useState } from 'react';
 
 export default function CreateNothi(){

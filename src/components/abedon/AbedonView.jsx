@@ -1,6 +1,6 @@
 import React from "react";
-import FullSelectionPortion from "../FullSelectionPortion";
-import Table from "../Table";
+import FullSelectionPortion from "../mainComponents/FullSelectionPortion";
+import Table from "../mainComponents/Table";
 import abedon from "../../data/abedon.json"
 
 export default function AbedonView() {
