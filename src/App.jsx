@@ -1,8 +1,9 @@
 import MainFooter from "./components/Footer"
-import Abedon from "./components/Abedon"
+import Abedon from "./components/AbedonView"
 import MainNavbar from "./components/Navbar"
 import MainSidebar from "./components/Sidebar"
 import Dahsboard from "./components/Dashboard"
+import Daak from "./components/DaakView"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
     <>
       <MainNavbar />
       <MainSidebar />
-      <Dahsboard />
+      <Daak />
       <MainFooter />
     </>,
     //errorElement: <ErrorPage />,

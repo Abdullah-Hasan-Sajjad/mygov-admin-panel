@@ -24,8 +24,16 @@ export default function MainNavbar() {
             আবেদন গ্রহণ
           </Link>
         </Navbar>
-        <Navbar.Link href="#" className='sm:hidden'>ডাক</Navbar.Link>
-        <Navbar.Link href="#" className='sm:hidden'>নথি</Navbar.Link>
+        <Navbar className='sm:hidden'>
+          <Link to={"/daak"}>
+            ডাক
+          </Link>
+        </Navbar>
+        <Navbar className='sm:hidden'>
+          <Link to={"/nathi"}>
+            নথি
+          </Link>
+        </Navbar>
         <MainDropdown dropdownSize={'small'} label={'ব্যবহারকারী'} dropdownItems={['Profile','Log Out']}/>  
       </Navbar.Collapse>
     </Navbar>
