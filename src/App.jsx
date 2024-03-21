@@ -1,7 +1,7 @@
 
 import Dahsboard from "./components/Dashboard"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AbedonView from "./components/AbedonView"
+import AbedonView from "./components/abedon/AbedonView"
 import DaakView from "./components/DaakView"
 import NathiView from "./components/NathiView"
 import MainLayout from "./components/mainLayout/MainLayout";
