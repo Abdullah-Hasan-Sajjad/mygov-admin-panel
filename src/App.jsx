@@ -6,11 +6,17 @@ import DaakView from "./components/daak/DaakView"
 import NathiView from "./components/nothi/NothiView"
 import MainLayout from "./components/mainLayout/MainLayout"
 import ErrorPage from "./components/mainComponents/ErrorPage"
+import LoginForm from "./components/LoginForm";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout> <Dahsboard /></MainLayout>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/login",
+    element: <LoginForm />,
     errorElement: <ErrorPage />,
   },
   {

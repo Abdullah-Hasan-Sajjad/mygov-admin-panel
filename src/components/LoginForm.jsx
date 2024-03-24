@@ -1,6 +1,3 @@
-
-'use client';
-
 import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
 import { useEffect } from 'react';
 import axios from "axios"
@@ -13,7 +10,7 @@ export default function LoginForm() {
             email:"newtesting@gmail.com",
             password:"testing1234@"
         }
-        axios.post("https://176b-49-0-41-62.ngrok-free.app/api/login",data).then(response=>
+        axios.post("https://e514-49-0-41-62.ngrok-free.app/api/login",data).then(response=>
         {
             console.log(response.data)
         }).catch(e=>{
