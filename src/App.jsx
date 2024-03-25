@@ -6,37 +6,37 @@ import DaakView from "./components/daak/DaakView"
 import NathiView from "./components/nothi/NothiView"
 import MainLayout from "./components/mainLayout/MainLayout"
 import ErrorPage from "./components/mainComponents/ErrorPage"
-import LoginForm from "./components/LoginForm";
+import LoginForm from "./components/LoginForm"
+import PrivateOutlet from "./components/PrivateRouteLayout";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout> <Dahsboard /></MainLayout>,
+    element: <PrivateOutlet />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "dashboard",
+        element: <MainLayout><Dahsboard /></MainLayout>,
+      },
+      {
+        path: "abedon",
+        element: <MainLayout><AbedonView /></MainLayout>,
+      },
+      {
+        path: "daak",
+        element: <MainLayout><DaakView /></MainLayout>,
+      },
+      {
+        path: "nathi",
+        element: <MainLayout><NathiView /></MainLayout>,
+      },
+    ],
   },
   {
     path: "/login",
     element: <LoginForm />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/dashboard",
-    element: <MainLayout><Dahsboard /></MainLayout>,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/abedon",
-    element: <MainLayout><AbedonView /></MainLayout>,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/daak",
-    element: <MainLayout><DaakView /></MainLayout>,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/nathi",
-    element: <MainLayout><NathiView /></MainLayout>,
     errorElement: <ErrorPage />,
   },
 ]);
