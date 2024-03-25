@@ -55,7 +55,8 @@ export default function LoginForm() {
 
   return (
     <>
-      <form className="flex max-w-md flex-col gap-4" method='post' onSubmit={handleLogin}>
+    <div className="h-screen flex items-center justify-center p-6">
+      <form className="flex max-w-md flex-col gap-4 grow" method='post' onSubmit={handleLogin}>
         <div>
           <div className="mb-2 block">
             <Label htmlFor="email1" value="Your email" />
@@ -72,8 +73,9 @@ export default function LoginForm() {
           <Checkbox id="remember" />
           <Label htmlFor="remember">Remember me</Label>
         </div>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Login</Button>
       </form>
+      </div>
     </>
   );
 }
