@@ -1,5 +1,12 @@
 export default function Authentication(){
-    const auth = true;
+
+    let auth = false;
+
+    if ((JSON.parse(localStorage.getItem('userInfo'))).token){
+        auth = true;
+    }else{
+        auth = false;
+    }
     
     return auth;
 }

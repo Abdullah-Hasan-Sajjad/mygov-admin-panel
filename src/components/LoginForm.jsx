@@ -1,11 +1,14 @@
 import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
-import axios from 'axios';
+import axios from 'axios'; 
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
 
+  const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(e);
+    //console.log(e);
 
     // Read the form data
     const form = e.target;
@@ -18,7 +21,15 @@ export default function LoginForm() {
 
     axios.post('https://dummyjson.com/auth/login', formData)
       .then(function (response) {
-        console.log(response);
+        if (response.data.token) {
+
+          localStorage.setItem('userInfo', JSON.stringify(response.data));
+          navigate("/dashboard");
+        }
+        else{
+          navigate("/login");
+        }
+        
       })
       .catch(function (error) {
         console.log(error);
