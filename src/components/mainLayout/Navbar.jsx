@@ -1,5 +1,5 @@
 import { Button, Navbar } from 'flowbite-react';
-import MainDropdown from '../mainComponents/Dropdown';
+import MainDropdown from '../mainComponents/MainDropdown';
 import { Outlet, Link } from "react-router-dom";
 
 export default function MainNavbar() {
@@ -30,7 +30,7 @@ export default function MainNavbar() {
           </Link>
         </Navbar>
         <Navbar className='sm:hidden'>
-          <Link to={"/nathi"}>
+          <Link to={"/nothi"}>
             নথি
           </Link>
         </Navbar>

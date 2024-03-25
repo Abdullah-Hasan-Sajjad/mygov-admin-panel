@@ -26,7 +26,7 @@ export default function MainSidebar() {
             </Sidebar.Item>
           </Link>
 
-          <Link to={"/nathi"}>
+          <Link to={"/nothi"}>
             <Sidebar.Item icon={HiShoppingBag}>
               নথি
             </Sidebar.Item>

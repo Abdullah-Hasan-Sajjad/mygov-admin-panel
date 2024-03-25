@@ -16,7 +16,11 @@ export default function MainDropdown({dropdownSize, label, dropdownItems}) { // 
             <Dropdown label={label} size="lg">
                 {
                     dropdownItems.map((item, index) => {
-                        return <Dropdown.Item key={index}>{item}</Dropdown.Item>
+                        return(
+                            <Dropdown.Item key={index}>
+                                {item}
+                            </Dropdown.Item>
+                        )
                     })
                 }
             </Dropdown>

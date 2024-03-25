@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <MainLayout><DaakView /></MainLayout>,
       },
       {
-        path: "nathi",
+        path: "nothi",
         element: <MainLayout><NathiView /></MainLayout>,
       },
     ],
