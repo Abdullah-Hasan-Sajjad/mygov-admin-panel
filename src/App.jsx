@@ -6,8 +6,8 @@ import DaakView from "./components/daak/DaakView"
 import NathiView from "./components/nothi/NothiView"
 import MainLayout from "./components/mainLayout/MainLayout"
 import ErrorPage from "./components/mainComponents/ErrorPage"
-import LoginForm from "./components/LoginForm"
-import PrivateOutlet from "./components/PrivateRouteLayout";
+import LoginForm from "./components/authentication/LoginForm"
+import PrivateOutlet from "./components/protectedRoutes/PrivateRouteLayout";
 
 
 const router = createBrowserRouter([
